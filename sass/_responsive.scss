@@ -1,0 +1,126 @@
+@media (max-width: 991px) {
+
+	.col-sm-1, 
+	.col-sm-2, 
+	.col-sm-3,
+	.col-sm-4,
+	.col-sm-5,
+	.col-sm-6,
+	.col-sm-7,
+	.col-sm-8,
+	.col-sm-9,
+	.col-sm-10,
+	.col-sm-11,
+	.col-sm-12 {
+		margin-bottom: $elements-gap / 2;
+	}
+
+	.si-desc {
+		margin: 30px -15px -15px;
+	}
+
+	.header-desc span {
+		width: 50%;
+	}
+
+	.portfolio-item {
+		width: 33.333%;
+	}
+
+	.sidebar {
+		margin-top: 30px;
+	}
+
+	#page-header {
+		.page-title h1 span::after, 
+		.page-title h2 span::after, 
+		.page-title h3 span::after,  
+		.page-title h4 span::after, 
+		.page-title h5 span::after, 
+		.page-title h6 span::after {
+			border: none;
+		}	
+
+		.header-desc span {
+			width: 100%;
+		}
+	}
+
+	.bottom-gap, .resp-no-gap {
+		margin-bottom: 0px;
+	}
+
+	.home-text .big-text {
+		font-size: $home-big-text-font-size / 1.5;
+		line-height: $home-big-text-line-height / 1.5;
+	}
+
+	.trigger-fixed {
+		position: absolute !important;
+	}
+
+	.section-bg-attached {
+		background-attachment: scroll !important;
+	}
+
+	#page-header {
+		background-attachment: scroll !important;
+		background-image: url(img/resume-background-small.jpg) bottom center!important; 
+	}
+
+	.home-bg-container {
+		background: url(img/phoenix-bg.jpg) bottom center!important;
+	}
+
+	.mbYTP_wrapper {
+		display: none;
+	}
+
+}
+
+@media (max-width: 767px) {
+
+	.col-sm-1, .col-xs-1,
+	.col-sm-2, .col-xs-2, 
+	.col-sm-3, .col-xs-3,
+	.col-sm-4, .col-xs-4,
+	.col-sm-5, .col-xs-5,
+	.col-sm-6, .col-xs-6,
+	.col-sm-7, .col-xs-7,
+	.col-sm-8, .col-xs-8,
+	.col-sm-9, .col-xs-9,
+	.col-sm-10, .col-xs-10,
+	.col-sm-11, .col-xs-11,
+	.col-sm-12, .col-xs-12, {
+		margin-bottom: $elements-gap / 2;
+	}
+
+	.si-desc {
+		margin: 15px -15px -15px;
+	}
+
+	.resume-row {
+		margin-bottom: 0;
+		margin-top: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.header-desc-resume span {
+		width: 55%;
+	}
+
+	.bottom-gap, .resp-no-gap {
+		margin-bottom: 0px;
+	}
+
+	.portfolio-item {
+		width: 50%;
+	}
+
+	.home-text .big-text {
+		font-size: $home-big-text-font-size / 2;
+		line-height: $home-big-text-line-height / 2;
+	}
+
+}
