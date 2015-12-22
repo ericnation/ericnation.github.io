@@ -110,6 +110,15 @@ img {
 	max-width: 100%;
 }
 
+.centered {
+	bottom: 0;
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
 .lb-image {
 	max-width: none !important;
 }
@@ -926,6 +935,95 @@ header {
 		width: 100%;
 	}
 }
+
+.project-wrap {
+	background: url('img/macbook_pro.png') no-repeat center;
+	height: 568px;
+  margin-bottom: 45px;
+  width: 100%;
+  position: relative;
+}
+
+.browser-window {
+	background: #fff;
+	@include border-radius(5px);
+	border: 1px solid #C4C4C4;
+	@include display-flex;
+	@include flex-direction(column);
+	height: 386px;
+	@include justify-content(center);
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	top: 55px;
+	width: 715px;
+}
+
+.browser-header {
+	background: #CBCBCB;
+	@include border-top-left-radius(3px);
+	@include border-top-right-radius(3px);
+	height: 30px;
+	left: 0;
+	padding: 8px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.header-btns {
+	margin: 0;
+	padding: 0;
+
+	li {
+		float: left;
+		list-style: none;
+		padding: 0;
+		margin-right: 6px;
+
+		.browser-header-circle {
+			@include border-radius(50%);
+			display: block;
+			height: 13px;
+			width: 13px;
+
+			&.red {
+				background: #DF1C1C;
+			}
+
+			&.yellow {
+				background: #D9A206;
+			}
+
+			&.green {
+				background: #22AE23;
+			}
+		}
+	}
+}
+
+.play-btn {
+	z-index: 10;
+	.fa-play-circle {
+		color: #000;
+		font-size: 4em;
+
+		&:hover {
+			color: $accent-color;
+			cursor: pointer;
+		}
+	}
+}
+
+.portfolio-video {
+	@include border-radius(4px);
+	height: auto;
+	position: absolute;
+	top: 30px;
+	width: 100%;
+}
+
+
 
 .project-error, .project-loader {
 	display: block;

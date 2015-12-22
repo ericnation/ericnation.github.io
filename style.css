@@ -98,6 +98,15 @@ img {
   max-width: 100%;
 }
 
+.centered {
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 .lb-image {
   max-width: none !important;
 }
@@ -1005,6 +1014,100 @@ header {
 }
 .project-info .btn {
   margin-top: 35px;
+  width: 100%;
+}
+
+.project-wrap {
+  background: url("img/macbook_pro.png") no-repeat center;
+  height: 568px;
+  margin-bottom: 45px;
+  width: 100%;
+  position: relative;
+}
+
+.browser-window {
+  background: #fff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #C4C4C4;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  height: 386px;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  top: 55px;
+  width: 715px;
+}
+
+.browser-header {
+  background: #CBCBCB;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  height: 30px;
+  left: 0;
+  padding: 8px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.header-btns {
+  margin: 0;
+  padding: 0;
+}
+.header-btns li {
+  float: left;
+  list-style: none;
+  padding: 0;
+  margin-right: 6px;
+}
+.header-btns li .browser-header-circle {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  height: 13px;
+  width: 13px;
+}
+.header-btns li .browser-header-circle.red {
+  background: #DF1C1C;
+}
+.header-btns li .browser-header-circle.yellow {
+  background: #D9A206;
+}
+.header-btns li .browser-header-circle.green {
+  background: #22AE23;
+}
+
+.play-btn {
+  z-index: 10;
+}
+.play-btn .fa-play-circle {
+  color: #000;
+  font-size: 4em;
+}
+.play-btn .fa-play-circle:hover {
+  color: #15C1D4;
+  cursor: pointer;
+}
+
+.portfolio-video {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  height: auto;
+  position: absolute;
+  top: 30px;
   width: 100%;
 }
 
@@ -1925,11 +2028,8 @@ html[xmlns] .tweet_list {
 .section-inverse blockquote p::before,
 .section-inverse blockquote p::after,
 .section-inverse blockquote small .occupation,
-.section-inverse .testimonial blockquote small::after,
 .section-inverse .service-desc::after,
 .section-inverse .header-desc span,
-.section-inverse .post-info,
-.section-inverse .goto-blog::before,
 .section-inverse .tweet_time,
 .section-inverse .project-nav ul li a,
 .section-inverse a:hover {
@@ -1962,9 +2062,6 @@ html[xmlns] .tweet_list {
 .section-inverse .pt-header a:hover {
   background: #b3b3b3 !important;
 }
-.section-inverse .goto-blog {
-  border: 2px solid #b3b3b3 !important;
-}
 .section-inverse .count-header,
 .section-inverse .accent-color,
 .section-inverse .service-icon,
@@ -1985,7 +2082,7 @@ html[xmlns] .tweet_list {
 .section-inverse .devices-nav .flex-active a:hover i {
   border: 2px solid #15C1D4 !important;
 }
-.section-inverse .pricing-table, .section-inverse .tab, .section-inverse .panel-group,
+.section-inverse .tab, .section-inverse .panel-group,
 .section-inverse .social-icons a {
   color: #666666 !important;
 }
@@ -2260,22 +2357,6 @@ html[xmlns] .tweet_list {
   .col-sm-11, .col-xs-11,
   .col-sm-12, .col-xs-12 {
     margin-bottom: 50px;
-  }
-
-  .story-item-content {
-    width: 80%;
-  }
-
-  .si-year::after {
-    display: none;
-  }
-
-  .story-item:nth-child(even) .story-item-content .si-year {
-    left: -30px;
-  }
-
-  .story-item:nth-child(odd) .story-item-content .si-year {
-    right: -30px;
   }
 
   .si-desc {
