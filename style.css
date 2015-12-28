@@ -1035,8 +1035,6 @@ header {
   -webkit-flex-direction: column;
   flex-direction: column;
   height: 386px;
-  -webkit-justify-content: center;
-  justify-content: center;
   margin: 0 auto;
   position: relative;
   text-align: center;
@@ -1090,7 +1088,14 @@ header {
 
 .fa-play-circle {
   color: #000;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
   font-size: 5em;
+  height: 100%;
+  -webkit-justify-content: center;
+  justify-content: center;
   z-index: 10;
 }
 .fa-play-circle:hover {
@@ -1098,7 +1103,14 @@ header {
   cursor: pointer;
 }
 .fa-play-circle.active-video {
-  display: none;
+  opacity: 0;
+}
+
+.fit-vid {
+  display: flex;
+  height: 100%;
+  position: relative;
+  top: 30px;
 }
 
 .portfolio-video {
