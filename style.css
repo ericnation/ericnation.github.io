@@ -1030,7 +1030,6 @@ header {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  border: 1px solid #C4C4C4;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
@@ -1047,12 +1046,12 @@ header {
 
 .browser-header {
   background: #CBCBCB;
-  -moz-border-radius-topleft: 3px;
-  -webkit-border-top-left-radius: 3px;
-  border-top-left-radius: 3px;
-  -moz-border-radius-topright: 3px;
-  -webkit-border-top-right-radius: 3px;
-  border-top-right-radius: 3px;
+  -moz-border-radius-topleft: 4px;
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
   height: 30px;
   left: 0;
   padding: 8px;
@@ -1089,23 +1088,25 @@ header {
   background: #22AE23;
 }
 
-.play-btn {
+.fa-play-circle {
+  color: #000;
+  font-size: 5em;
   z-index: 10;
 }
-.play-btn .fa-play-circle {
-  color: #000;
-  font-size: 4em;
-}
-.play-btn .fa-play-circle:hover {
+.fa-play-circle:hover {
   color: #15C1D4;
   cursor: pointer;
 }
+.fa-play-circle.active-video {
+  display: none;
+}
 
 .portfolio-video {
+  background: #fff;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   border-radius: 4px;
-  height: auto;
+  height: 100%;
   position: absolute;
   top: 30px;
   width: 100%;
