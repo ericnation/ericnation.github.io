@@ -1017,6 +1017,10 @@ header {
   width: 100%;
 }
 
+.portfolio-copy {
+  margin-bottom: 50px;
+}
+
 .project-wrap {
   background: url("img/macbook_pro.png") no-repeat center;
   height: 568px;
