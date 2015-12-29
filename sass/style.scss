@@ -959,7 +959,7 @@ header {
 }
 
 .browser-header {
-	background: #CBCBCB;
+	background: #E0E0E0;
 	@include border-top-left-radius(4px);
 	@include border-top-right-radius(4px);
 	height: 30px;
@@ -987,15 +987,15 @@ header {
 			width: 13px;
 
 			&.red {
-				background: #DF1C1C;
+				background: #F42828;
 			}
 
 			&.yellow {
-				background: #D9A206;
+				background: #F6BB15;
 			}
 
 			&.green {
-				background: #22AE23;
+				background: #31CD32;
 			}
 		}
 	}

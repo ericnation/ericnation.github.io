@@ -76,6 +76,31 @@
 		display: none;
 	}
 
+	.project-wrap {
+		background: none;
+		height: auto;
+	}
+
+	.browser-window {
+		border: 1px solid #D5D5D5;
+		height: auto;
+		top: 0;
+		width: 100%;
+	}
+
+	.portfolio-video {
+		@include border-radius(0px);
+		margin-top: 30px;
+		position: relative;
+		top: 0;
+	}
+
+	.fa-play-circle {
+		position: absolute;
+		width: 100%;
+	}
+
+
 }
 
 @media (max-width: 767px) {
