@@ -348,12 +348,22 @@
   function playVideo() {
     var playBtn = $('.fa-play-circle');
 
-    $(playBtn).click(function() {
+    $('.portfolio-video').each(function(){
+      var $this = $(this);
+      var video = $this.get(0);
+      $this.bind('ended', function() {
+        $this.prev('.fa-play-circle').removeClass('active-video');
+        video.currentTime = 0;
+      });
+    });
+
+    $(playBtn).on('click', function() {
       var $this = $(this);
       $this.toggleClass('active-video');
       var video = $(this).next('.portfolio-video').get(0);
-      if (video.paused === true) {
+      if (video.paused || video.ended) {
         video.play();
+
       } else {
         video.pause();
       }
