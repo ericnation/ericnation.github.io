@@ -15,7 +15,7 @@ body {
 	font-family: $primary-font-family;
 	font-size: $primary-font-size;
 	line-height: $primary-font-line-height;
-	background: $body-background-color; 
+	background: $body-background-color;
 	color: $default-text-color;
 }
 
@@ -127,7 +127,7 @@ img {
 /* NAVIGATION */
 @import "navbar";
 
-//ANIMATE HOME READ MORE BUTTON 
+//ANIMATE HOME READ MORE BUTTON
 @-webkit-keyframes read-more {
   0%   { bottom: $home-radmore-bottom-gap; }
   50% { bottom: $home-radmore-bottom-gap - 10px; }
@@ -389,7 +389,7 @@ header {
 	}
 
 	.flex-control-paging li a.flex-active {
-		background: $home-text-color; 
+		background: $home-text-color;
 	}
 }
 
@@ -466,7 +466,7 @@ header {
 				width: $section-header-line-width;
 				border-bottom: $section-header-line-height-color;
 				content: "";
-			}	
+			}
 
 			&::before {
 				left: - $section-header-line-width - 25px;
@@ -474,7 +474,7 @@ header {
 
 			&::after {
 				right: - $section-header-line-width - 25px;
-			}	
+			}
 		}
 	}
 
@@ -689,8 +689,8 @@ header {
 		}
 }
 
-.non-semantic-protector { 
-	position: relative; z-index: 1; 
+.non-semantic-protector {
+	position: relative; z-index: 1;
 }
 
 
@@ -818,7 +818,7 @@ header {
 }
 
 .portfolio-item {
-	float: left;	
+	float: left;
 	width: 25%;
 	position: relative;
 
@@ -1007,7 +1007,7 @@ header {
 }
 
 
-	
+
 .fa-play-circle {
 	color: #000;
 	@include display-flex;
@@ -1072,7 +1072,7 @@ input, textarea {
 }
 
 #contact-form, #respond-form {
-	input { 
+	input {
 		width: 50%;
 	}
 }
@@ -1137,6 +1137,10 @@ textarea::-ms-input-placeholder {
 	margin-left: 3%;
 }
 
+.resume-link {
+	padding-right: 5px;
+}
+
 .resume-row {
 	margin-top: $resume-row-gap;
 	margin-bottom: $resume-row-gap;
@@ -1161,7 +1165,7 @@ textarea::-ms-input-placeholder {
 	}
 }
 
-/* MAP */ 
+/* MAP */
 #map {
      height: 500px;
      width: 100%;
