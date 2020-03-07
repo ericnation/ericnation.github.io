@@ -1222,6 +1222,12 @@ textarea::-ms-input-placeholder {
   margin-left: 3%;
 }
 
+.resume-wrap {
+  background: #15C1D4;
+  padding: 5px;
+  max-width: 127px;
+}
+
 .resume-link {
   padding-right: 5px;
 }
